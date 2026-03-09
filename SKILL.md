@@ -1,6 +1,7 @@
 ---
 name: Learning Media Script Coach
 description: Workflow copilot for educators and learning-media creators to research, outline, and script educational content with objectives and key takeaways.
+requiredEnv: []
 permissions:
   - filesystem: Write outlines and script drafts to the working directory
 source:
@@ -12,31 +13,38 @@ security:
 ---
 
 ## What this skill does
-This skill turns a topic and audience into a classroom-ready **learning media script**: title options, learning objectives, key takeaways, outline, and a draft script with pacing notes.
-
-## When to use
-- **Educators:** You’re creating a mini-lesson/explainer video/tutorial.
-- **Content creators (educational):** You’re designing “learning experiences” for YouTube, TikTok, podcast segments, etc.
+Turns a topic and audience into a classroom-ready **learning media script**: title options, learning objectives, key takeaways, outline, and a draft script with pacing notes.
 
 ## Inputs
-- Topic + audience (grade range OR learner profile)
-- Platform + desired duration
-- Learning objectives/standards (if any)
-- Key takeaways (if any)
-- Rubric/voice/style guide (optional)
-
-## Clarifying questions (max 2)
-1) Audience + subject (grade level or learner profile; e.g., 8th-grade science)
-2) Length + platform (e.g., 3–5 min YouTube) and whether you want an assessment (exit ticket/quiz prompt)
+- topic + audience (grade range OR learner profile)
+- platform + desired duration
+- learning objectives/standards (if any)
+- key takeaways (if any)
+- rubric/voice/style guide (optional)
 
 ## Outputs
 - 3 title options
 - 2–5 learning objectives
-- Key takeaways list
-- Section-by-section outline (Hook → Teach → Practice/Check → Summarize)
-- Draft script with A-roll/B-roll notes + call-to-action (CTA)
-- If requested: a draft short-form version (reel/short) using the same takeaways
+- key takeaways list
+- section-by-section outline (Hook → Teach → Practice/Check → Summarize)
+- draft script with A-roll/B-roll notes + call-to-action (CTA)
+- if requested: a short-form version (reel/short) using the same takeaways
 
-## Assumptions
-- Assuming general audience knowledge appropriate to the specified grade/level.
-- If standards are not provided, alignment is approximate and should be reviewed by the teacher.
+## How to use
+1. Provide the topic, audience, platform, and target duration.
+2. Paste any learning objectives or standards you want included.
+3. The agent drafts objectives, outline, script, and pacing notes.
+4. Review and edit for accuracy and authenticity before publishing.
+
+## Example prompts
+- "Write an educational video script about water cycles for 5th graders; 4–6 minutes on YouTube; include 3 learning objectives."
+- "Draft an outline + script for a 2-minute TikTok teaching slope-intercept form; include a quick check-for-understanding question."
+- "Create a classroom explainer script about consent + digital citizenship for middle school; cite sources I provide and avoid personal advice."
+
+## Constraints & ethics
+- Cite sources when provided; do not present unverified facts as certainty.
+- Avoid copying copyrighted scripts verbatim.
+- Do not include personal advice, medical advice, or legally-binding claims.
+
+## Limitations
+This skill generates scripts and outlines—it does not record video/audio or publish content. Always review for accuracy, accessibility, and age-appropriateness before sharing.
